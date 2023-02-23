@@ -1,48 +1,77 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Docut  sss   </title>
-  
+  <title>Document</title>
   <style>
     #wrapper{
+      width:80%;
+      background-color: lightgray;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 5px solid black;
+      border-radius: 15px;
+    }
+
+    #banner{
+      border:2px solid red;
+      padding: 0.5rem;
+    }
+    #mybanner{
+      width:100%;
+    }
+
+    #main{
       display: flex;
-      width: 90%;
-      margin: 1rem auto;
-      border: 10px solid blue;
-      padding: 10px;
-      border-radius: 20px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
-    #red{
-      background-color: red;
-      flex:1
-    }
-    #green{
+
+    #left{
+      height: 150px;
+      flex:1;
       background-color: green;
-      flex:2
+      margin-left: 1rem;
     }
-    #blue{
+    #center{
+      height: 150px;
+      flex:2;
+      background-color: red;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    #right{
+      height: 150px;
+      flex:1;
       background-color: blue;
-      flex:1
     }
-    #yellow{
-      background-color: yellow;
-      flex:2
-    }
-    .box{
-      /* width: 200px; */
-      height: 200px;
+    #footer{
+      width:50%;
+      margin: 0 auto;
+      border: 0.5rem solid yellow;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      text-align:center
     }
   </style>
 </head>
 <body>
-  <div id="wrapper">
-    <div id="red" class="box"></div>
-    <div id="green" class="box"></div>
-    <div id="blue" class="box"></div>
-    <div id="yellow" class="box"></div>
+  <div id = "wrapper">
+    <div id="banner">
+      <img id="mybanner" src="image1/ge.png" alt="">
+    </div>
+    <div id="main">
+      <div id="left"></div>
+      <div id="center"></div>
+      <div id="right"></div>
+    </div>
+
+    <div id="footer">safnajdshfajdskhfasdljkfhasdkljfhsalkjdfhsalkjdfhsalkdjhflsakdj
+      safnajdshfajdskhfasdljkfhasdkljfhsalkjdfhsalkjdfhsalkdjhflsakdj
+      safnajdshfajdskhfasdljkfhasdkljfhsalkjdfhsalkjdfhsalkdjhflsakdj
+      safnajdshfajdskhfasdljkfhasdkljfhsalkjdfhsalkjdfhsalkdjhflsakdj
+    </div>
   </div>
 </body>
 </html>
