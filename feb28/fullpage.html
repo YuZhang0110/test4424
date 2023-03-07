@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- modals -->
-    <div class="modal is-active">
+    <div class="modal" id="signupmodal">
       <div class="modal-background"></div>
       <div class="modal-content has-background-white section has-text-centered">
         <h1 class="title">Sign up</h1>
@@ -48,7 +48,7 @@
       <!-- links on the navbar -->
       <div class="navbar-menu">
         <div class="navbar-end">
-          <a href="#" class="navbar-item">Sign Up</a>
+          <a id="signup" class="navbar-item">Sign Up</a>
           <a href="#" class="navbar-item">Sign In</a>
         </div>
       </div>
@@ -132,9 +132,30 @@
         </p>
       </div>
     </footer>
+    <input type="text" 
+           id="fname" 
+           placeholder="enter your name here" 
+           value="John" 
+           class="temp big">
     <!-- javascript -->
     <script>
       // javascript code here
+      // let fname = document.querySelector('#fname');
+      // console.log(fname.value);
+      // console.log(fname.type);
+      // console.log(fname.placeholder);
+      // console.log(fname.id);
+
+      // fname.value = "samer";
+      // console.log(fname.value);
+      // console.log(fname.classList)
+      let signupmodal = document.querySelector('#signupmodal');
+      let signup = document.querySelector('#signup');
+      function showmodal(){
+        // alert("hello");
+        signupmodal.classList.add("is-active")
+      }
+      signup.addEventListener('click', showmodal);
     </script>
   </body>
 </html>
